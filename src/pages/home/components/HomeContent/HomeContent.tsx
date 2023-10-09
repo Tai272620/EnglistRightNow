@@ -10,7 +10,7 @@ export default function HomeContent() {
     useEffect(() => {
         AOS.init();
     }, []);
-    const [courses, setCourses] = useState([
+    const [courses] = useState([
         {
             url: "https://firebasestorage.googleapis.com/v0/b/coffee-app-bbb51.appspot.com/o/course-01.jpg?alt=media&token=3855eea4-95e7-4ffb-ab3d-ff7ec2eb01ee&_gl=1*jxumhf*_ga*MTg4MTQzMTQzNS4xNjg5NzYzODI2*_ga_CW55HF8NVT*MTY5NjE2NDAwNi43NS4xLjE2OTYxNjQwMzIuMzQuMC4w",
             title: "Tiếng Anh cho người mất gốc"
@@ -29,7 +29,7 @@ export default function HomeContent() {
         },
     ])
 
-    const [teachers, setTeachers] = useState([
+    const [teachers] = useState([
         {
             url: "https://firebasestorage.googleapis.com/v0/b/coffee-app-bbb51.appspot.com/o/teacher-01.jpeg?alt=media&token=9c1e05de-2121-40f9-aeb7-337961175b61&_gl=1*ybm8u0*_ga*MTg4MTQzMTQzNS4xNjg5NzYzODI2*_ga_CW55HF8NVT*MTY5NjE2NDAwNi43NS4xLjE2OTYxNjU5NzAuNTIuMC4w",
             name: "Thầy Nguyên"
@@ -64,7 +64,7 @@ export default function HomeContent() {
         },
     ])
 
-    const [images, setImages] = useState([
+    const [images] = useState([
         {
             url: "https://firebasestorage.googleapis.com/v0/b/coffee-app-bbb51.appspot.com/o/image-01.jpeg?alt=media&token=6a064742-295c-4f54-b4c6-2ad9e07ad794&_gl=1*1erzncl*_ga*MTg4MTQzMTQzNS4xNjg5NzYzODI2*_ga_CW55HF8NVT*MTY5NjE3MzE0OS43Ni4xLjE2OTYxNzMxNjUuNDQuMC4w",
             title: "Tiếng Anh cho người mất gốc"
@@ -270,6 +270,65 @@ export default function HomeContent() {
                             <img src={image.url} alt="" />
                         </div>)}
                     </div>
+                </div>
+            </div>
+            <div className='questions__wrapper'>
+                <div className='questions__container'>
+                    <div className='questions__left'>
+                        <h2>HỎI VÀ TRẢ LỜI</h2>
+                        <p>KHOÁ HỌC PHÙ HỢP VỚI NHỮNG AI? <span className="material-symbols-outlined">
+                            add
+                        </span>
+                        </p>
+                        <p>ƯU ĐIỂM KHI HỌC Ở ENGLISH RIGHT NOW? <span className="material-symbols-outlined">
+                            add
+                        </span>
+                        </p>
+                        <p>TRUNG TÂM CÓ ĐẢM BẢO ĐẦU RA KHÔNG? <span className="material-symbols-outlined">
+                            add
+                        </span>
+                        </p>
+                        <p>TÔI CÓ CẦN TEST THỬ TRÌNH ĐỘ KHÔNG? <span className="material-symbols-outlined">
+                            add
+                        </span>
+                        </p>
+                        <p>ĐĂNG KÝ LỊCH HỌC NHƯ THẾ NÀO? <span className="material-symbols-outlined">
+                            add
+                        </span>
+                        </p>
+                    </div>
+                    <form className='questions__right'>
+                        <h2>TEST TRÌNH ĐỘ MIỄN PHÍ</h2>
+                        <p>Kiểm tra trình độ MIỄN PHÍ cùng English Right Now</p>
+                        <div className='form__group'>
+                            <label htmlFor="name">Tên của bạn</label><br />
+                            <input type="text" id='name' />
+                        </div>
+                        <div className='form__group'>
+                            <label htmlFor="phone">Số Điện Thoại</label><br />
+                            <input type="text" id='phone' />
+                        </div>
+                        <div className='checkbox__container'>
+                            <h5>Nhu Cầu Học Tiếng Anh Của Bạn</h5>
+                            <label htmlFor="">
+                                <input type="checkbox" />
+                                lớp luyện thi IELTS
+                            </label><br />
+                            <label htmlFor="">
+                                <input type="checkbox" />
+                                lớp luyện thi TOEIC
+                            </label><br />
+                            <label htmlFor="">
+                                <input type="checkbox" />
+                                lớp cho tiếng Anh người mất gốc
+                            </label><br />
+                            <label htmlFor="">
+                                <input type="checkbox" />
+                                lớp cho tiếng Anh giao tiếp
+                            </label><br />
+                        </div>
+                        <button type='button' className='submit__button'>GỬI</button>
+                    </form>
                 </div>
             </div>
         </div>

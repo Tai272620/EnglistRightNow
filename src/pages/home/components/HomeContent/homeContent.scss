@@ -294,3 +294,99 @@
 
 
 }
+
+.questions__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-top: 70px;
+
+    .questions__container {
+        width: 100%;
+        max-width: 1440px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 60px;
+
+        .questions__left {
+            font-family: 'Quicksand', sans-serif;
+            width: 60%;
+
+            h2 {
+                font-family: 'Quicksand', sans-serif;
+            }
+
+            p {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #2d4061;
+                width: 70%;
+                padding: 15px 0px;
+                color: #2d4061;
+                cursor: pointer;
+                margin-bottom: 0px;
+
+                span {
+                    color: #2d4061;
+                }
+            }
+        }
+
+        .questions__right {
+            font-family: 'Quicksand', sans-serif;
+            width: 40%;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, #71c0ec, #82c9ea, #94d2e8, #a8dae7, #bde2e8, #bde2e8, #bde2e8, #bde2e8, #a8dae7, #94d2e8, #82c9ea, #71c0ec);
+            border-radius: 20px;
+
+            h2,
+            p {
+                text-align: center;
+            }
+
+            .form__group {
+                width: 90%;
+                margin-bottom: 10px;
+
+                label {
+                    margin-left: 40px;
+                }
+
+                input {
+                    outline: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    width: 80%;
+                    margin-left: 40px;
+                }
+            }
+
+            .checkbox__container {
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+                label {
+                    color: #6c665e;
+
+                    input {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .submit__button {
+                padding: 10px 30px;
+                border-radius: 20px;
+                background-color: #0263c4;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}
