@@ -16,7 +16,7 @@ export default function HomeContent() {
             title: "Tiếng Anh cho người mất gốc"
         },
         {
-            url: "https://firebasestorage.googleapis.com/v0/b/coffee-app-bbb51.appspot.com/o/course-01.jpg?alt=media&token=3855eea4-95e7-4ffb-ab3d-ff7ec2eb01ee&_gl=1*jxumhf*_ga*MTg4MTQzMTQzNS4xNjg5NzYzODI2*_ga_CW55HF8NVT*MTY5NjE2NDAwNi43NS4xLjE2OTYxNjQwMzIuMzQuMC4w",
+            url: "https://firebasestorage.googleapis.com/v0/b/coffee-app-bbb51.appspot.com/o/course-07.jpeg?alt=media&token=eee5af1e-3c46-48fc-8450-66769dfe63b2&_gl=1*19qq8ld*_ga*MTg4MTQzMTQzNS4xNjg5NzYzODI2*_ga_CW55HF8NVT*MTY5Njg1OTA3MS44MC4xLjE2OTY4NTkxMTMuMTguMC4w",
             title: "Tiếng Anh Giao tiếp"
         },
         {
