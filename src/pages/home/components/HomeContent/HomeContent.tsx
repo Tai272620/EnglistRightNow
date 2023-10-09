@@ -320,11 +320,11 @@ export default function HomeContent() {
                             </label><br />
                             <label htmlFor="">
                                 <input type="checkbox" />
-                                lớp cho tiếng Anh người mất gốc
+                                lớp tiếng Anh cho người mất gốc
                             </label><br />
                             <label htmlFor="">
                                 <input type="checkbox" />
-                                lớp cho tiếng Anh giao tiếp
+                                lớp tiếng Anh cho giao tiếp
                             </label><br />
                         </div>
                         <button type='button' className='submit__button'>GỬI</button>
