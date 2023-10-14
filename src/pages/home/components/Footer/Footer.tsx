@@ -46,9 +46,18 @@ export default function Footer() {
                         <p className='footer__top__right__title'>
                             Kết nối mạng xã hội
                         </p>
-                        <a href="https://www.facebook.com/RightNowC102">
-                            <i className="fa-brands fa-facebook"></i>
-                        </a>
+                        <div className='footer__top__right__link'>
+                            <a href="https://www.facebook.com/RightNowC102">
+                                <i className="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="">
+                                <i className="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="">
+                                <i className="fa-brands fa-tiktok"></i>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
                 <div className='footer__bottom'>

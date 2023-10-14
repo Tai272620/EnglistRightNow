@@ -97,7 +97,7 @@ export default function HomeContent() {
                 <div className='content_container'>
                     <div className='content'>
                         <div className='content_left'>
-                            <h1>Learn English today <br />
+                            <h1 className='content_left_slogan'>Learn English today <br />
                                 For a better tomorrow</h1>
                             <p>English Right Now giúp bạn học nhanh, hiểu nhanh và đạt điểm cao trong thời gian ngắn nhất!</p>
                             <button className='primary_button'>TƯ VẤN CHO TÔI HỌC PHÍ VÀ LỊCH HỌC</button>
@@ -213,6 +213,14 @@ export default function HomeContent() {
                             tablet: {
                                 breakpoint: {
                                     max: 1024,
+                                    min: 464
+                                },
+                                items: 3,
+                                partialVisibilityGutter: 30
+                            },
+                            tabletmini: {
+                                breakpoint: {
+                                    max: 768,
                                     min: 464
                                 },
                                 items: 2,

@@ -51,6 +51,8 @@
                 img {
                     border-radius: 20px;
                     box-shadow: 2px 2px 31px 0px rgba(0, 0, 0, 0.1);
+                    // width: 80%;
+                    // object-fit: cover;
                 }
             }
         }
@@ -77,6 +79,8 @@
             }
         }
     }
+
+
 }
 
 .knowledge_wrapper {
@@ -149,7 +153,9 @@
                 width: 23%;
                 height: 350px;
                 background-image: url("https://firebasestorage.googleapis.com/v0/b/coffee-app-bbb51.appspot.com/o/course-01.jpg?alt=media&token=3855eea4-95e7-4ffb-ab3d-ff7ec2eb01ee&_gl=1*jxumhf*_ga*MTg4MTQzMTQzNS4xNjg5NzYzODI2*_ga_CW55HF8NVT*MTY5NjE2NDAwNi43NS4xLjE2OTYxNjQwMzIuMzQuMC4w");
-                background-size: cover;
+                // background-size: cover;
+                background-size: contain;
+                background-repeat: no-repeat;
                 border-radius: 15px;
                 position: relative;
                 cursor: pointer;
@@ -190,6 +196,10 @@
         }
 
         .teacher {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
             img {
                 width: 250px;
                 border-radius: 50%;
@@ -202,7 +212,6 @@
             }
 
             p {
-                margin-left: 25%;
                 font-size: 1.15rem;
             }
         }
@@ -389,4 +398,272 @@
             }
         }
     }
+}
+
+@media (max-width: 1024px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .content__wrapper .content_container .content .content_left h1 {
+        font-size: 2.15rem;
+    }
+
+    .content_right {
+        img {
+            width: 80%;
+            // object-fit: cover;
+        }
+    }
+
+    .content__wrapper .content_container .content .content_left .primary_button {
+        border-radius: 5px;
+        font-size: 0.8rem;
+    }
+
+    .teacher__wrapper {
+        margin-top: 0px;
+    }
+
+    .feedback__wrapper .feedback .feedback_box .feedback_box_image {
+        width: 28%;
+    }
+
+    .feedback__wrapper .feedback .feedback_box {
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+
+    .images__wrapper .images__container .images .image {
+        width: 25%;
+    }
+
+    .questions__wrapper .questions__container .questions__left {
+        width: 45%;
+    }
+
+    .questions__wrapper .questions__container .questions__right {
+        width: 50%;
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    .content__wrapper .content_container .content .content_left {
+        width: 40%;
+        padding-left: 10px;
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
+    .content__wrapper .content_container .content .content_left h1 {
+        font-size: 1.70rem;
+    }
+
+    .content__wrapper .content_container .content .content_right {
+        width: 50%;
+    }
+
+    .content_right img {
+        width: 80%;
+        // object-fit: cover;
+    }
+
+    .content__wrapper .content_container .content .content_left .primary_button {
+        border-radius: 5px;
+        font-size: 0.6rem;
+    }
+
+    .knowledge_wrapper .knowledge_container {
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+    }
+
+    .course_wrapper .course_container {
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+    }
+
+    .course_wrapper .course_container .course_box .course_box_image p {
+        font-size: 1rem;
+    }
+
+    .course_wrapper .course_container .course_box .course_box_image {
+        height: 250px;
+    }
+
+    .teacher__wrapper .multicarousel-container h3 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .feedback__wrapper .feedback h2 {
+        font-size: 1.5rem;
+    }
+
+    .questions__wrapper .questions__container .questions__left {
+        width: 40%;
+
+        p {
+            font-size: 0.6rem;
+        }
+    }
+
+    .questions__wrapper .questions__container .questions__right {
+        width: 55%;
+        padding: 20px;
+
+        h2 {
+            font-size: 1.25rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        .form__group {
+            input {
+                margin-left: 30px;
+            }
+
+            label {
+                font-size: 0.9rem;
+            }
+        }
+
+        .checkbox__container {
+            h5 {
+                font-size: 1rem;
+            }
+
+            label {
+                font-size: 0.8rem;
+
+            }
+        }
+    }
+
+    .images__wrapper .images__container .images .image {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .content__wrapper .content_container .content .content_left h1 {
+        text-align: center;
+    }
+
+    .content__wrapper .content_container .content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .content__wrapper .content_container .content .content_right {
+        width: 90%;
+
+        img {
+            width: 90%;
+        }
+    }
+
+    .content__wrapper .content_container .content .content_left {
+        width: 90%;
+    }
+
+    .feedback__wrapper .feedback .feedback_box .feedback_box_image {
+        width: 40%;
+    }
+
+    .questions__wrapper .questions__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .questions__wrapper .questions__container .questions__left {
+        width: 100%;
+    }
+
+    .questions__wrapper .questions__container .questions__left p {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .questions__wrapper .questions__container .questions__right {
+        width: 75%;
+    }
+}
+
+@media (max-width: 375px) {
+    .content__wrapper .content_container .content .content_left h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .knowledge_wrapper .knowledge_container {
+        h3 {
+            font-size: 1.15rem;
+        }
+    }
+
+    .course_wrapper .course_container {
+        h3 {
+            font-size: 1.15rem;
+        }
+    }
+
+    .course_wrapper .course_container .course_box .course_box_image {
+        height: 150px;
+
+        p {
+            font-size: 0.7rem;
+        }
+    }
+
+    .teacher__wrapper .multicarousel-container h3 {
+        font-size: 1.25rem;
+    }
+
+    .teacher {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .feedback__wrapper .feedback h2 {
+        font-size: 1.25rem;
+    }
+
+    .feedback__wrapper .feedback .feedback_box .feedback_box_image {
+        width: 90%;
+    }
+
+    .images__wrapper .images__container h3 {
+        font-size: 1.25rem;
+    }
+
+    .images__wrapper .images__container .images .image {
+        width: 85%;
+    }
+
+    .questions__wrapper .questions__container {
+        padding: 0px 30px;
+    }
+
+    .questions__wrapper .questions__container .questions__right {
+        width: 100%;
+    }
+
+    .questions__wrapper .questions__container .questions__right .form__group input {
+        margin-left: 10%;
+    }
+
 }

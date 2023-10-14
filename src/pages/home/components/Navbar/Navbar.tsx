@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.scss';
 import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
     const navigate = useNavigate();
+    const [showMenu, setShowMenu] = useState(false);
+    const [isActive, setIsActive] = useState(false);
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+        setIsActive(!isActive);
+    }
     return (
         <div className='navbar__container'>
             <nav className='navbar'>
@@ -13,7 +20,7 @@ export default function Navbar() {
                         onClick={() => navigate("/")}
                     />
                 </div>
-                <div className='navbar_center'>
+                <div className={`navbar_center ${showMenu ? 'responsive' : ''}`}>
                     <span>Giới thiệu</span>
                     <div className="dropdown">
                         <button
@@ -32,14 +39,19 @@ export default function Navbar() {
                             <li><a className="dropdown-item" href="#">Luyện thi IELTS</a></li>
                         </ul>
                     </div>
-                    {/* <span>Khoá học</span> */}
                     <span>Giảng viên</span>
                     <span>Nghề nghiệp</span>
                 </div>
                 <div className='navbar_right'>
                     <span><button className='primary_button'>TƯ VẤN HỌC PHÍ VÀ LỊCH HỌC</button></span>
                 </div>
+                <div className='navbar_toggle' onClick={() => toggleMenu()}>
+                    <i className="fa fa-bars"></i>
+                </div>
             </nav>
         </div>
     )
 }
+
+
+
